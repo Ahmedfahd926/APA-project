@@ -1,11 +1,18 @@
 package com.apaproject.servicefinder;
+@Entity
+@Table(name = "client") 
+public class client {
 
-public class Client {
-private String name;
-private String number;
-private String email;
-private String username;
-private String password;
+    @Id
+    @Column(name = "clientUsername")
+    private String username;
+
+    private String name;
+    private String number;
+    private String email;
+    
+    @Column(name = "clientPassword")
+    private String clientPassword;
 
 public Client(){
 
