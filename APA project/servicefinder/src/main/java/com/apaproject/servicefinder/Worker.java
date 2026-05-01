@@ -13,12 +13,6 @@ public class Worker {
     
     @Column(name = "WorkerPassword")
     private String WorkerPassword;
-public class Worker {
- private String name;
-    private String number;
-    private String email;
-    private String WorkerUsername;
-    private String WorkerPassword;
 
 
     public Worker(){
