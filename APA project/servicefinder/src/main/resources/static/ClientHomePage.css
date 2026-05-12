@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width:100% ;
+    height: 85px;
+    line-height: 85px;
+    padding: 0px 100px;
+    position: fixed;
+   background-image: linear-gradient(rgb(13, 38, 59));
+}
+nav p{
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+float: left;
+color: rgb(242, 153, 24);
+cursor: pointer;
+}
+ nav ul{
+    float: right;
+}
+nav li{
+    display: inline;
+    list-style: none;
+}
+nav li a{
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: rgb(242, 153, 24)
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    margin-top: 100px;
+}
+.text{
+flex: 1;
+font-size: larger;
+}
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -50px;
+}
+.image img{
+    max-width: 900px;
+    height: auto;
+}
+.services-container {
+    display: flex;
+    justify-content: space-around; /* Distributes cards evenly */
+    padding: 50px 100px;
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    flex: 1; /* Makes all cards the same width */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds that slight shadow look */
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: hidden; /* Keeps the image corners rounded */
+}
+
+.card img {
+    width: 100%; /* Makes image fit the card width */
+    height: 200px;
+    object-fit: cover; /* Prevents the image from looking stretched */
+}
+.card  :hover{  
+    color: rgb(242, 153, 24);
+}
+    

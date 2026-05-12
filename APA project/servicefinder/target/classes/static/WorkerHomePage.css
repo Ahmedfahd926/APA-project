@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 110px; /* Space for the fixed nav */
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(13, 38, 59);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav p {
+    font-size: 33px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(242, 153, 24);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 33px;
+    padding: 0 20px;
+}
+
+nav li a:hover {
+    color: rgb(242, 153, 24);
+}
+
+/* THE BOX (Job Card) */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.job-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid rgb(242, 153, 24); /* Cool orange accent */
+}
+
+.client-info h3 {
+    color: rgb(13, 38, 59);
+    margin-bottom: 5px;
+}
+
+.client-info p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* THE BUTTON */
+.btn-accept {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-accept:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}

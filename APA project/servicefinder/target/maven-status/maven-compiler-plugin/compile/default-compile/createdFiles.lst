@@ -1,0 +1,9 @@
+com\apaproject\servicefinder\ClientController.class
+com\apaproject\servicefinder\WorkerService.class
+com\apaproject\servicefinder\ServicefinderApplication.class
+com\apaproject\servicefinder\ClientService.class
+com\apaproject\servicefinder\ClientRepository.class
+com\apaproject\servicefinder\Worker.class
+com\apaproject\servicefinder\WorkerController.class
+com\apaproject\servicefinder\Client.class
+com\apaproject\servicefinder\WorkerRepository.class

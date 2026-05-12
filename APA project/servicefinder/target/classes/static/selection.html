@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Service Finder</title>
+    <link rel="stylesheet" href="selection.css">
+  </head>
+  <body>
+    <header>
+<nav>
+    <div>
+<p>Service Finder</p>
+    </div>
+    <ul>
+        <li><a href="/Home">Home</a></li>
+        <li><a href="selection.html">Book Service</a></li>
+        <li><a href="Contactus.html">Contact us</a></li>
+         <li><a href="adv.mp4">About Us</a></li>
+        <li><a href="/">Sign Out</a></li>
+    </ul>
+ </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <center>
+      <img src="Selection Image.png" height="50%" width="50%" />
+      <form method="post" action="/book-service">
+        governate:<input
+          type="text"
+          name="governate"
+          list="governate"
+          placeholder="Name of your governate"
+          required
+          size="40"
+          width="500"
+        />
+        <datalist id="governate">
+          <option>Cairo</option>
+          <option>Giza</option>
+          <option>Alexandria</option>
+          <option>Sharkya</option>
+          <option>Asuit</option>
+          <option>Hurghada</option>
+        </datalist>
+        <br />
+        city:<input
+          type="text"
+          name="city"
+          placeholder="Name of your city"
+          size="40"
+          width="500"
+        />
+        <br />
+        address:<input
+          type="text"
+          name="address"
+          placeholder="Enter the address"
+          required
+          size="40"
+          width="500"
+        />
+        <br />
+        Type of service
+        <select name="serviceType" required width="500">
+          <option value="Plumber">Plumber</option>
+          <option value="Carpenter">Carpenter</option>
+          <option value="Mechanic">Mechanic</option>
+          <option value="Electrician">Electrician</option>
+        </select>
+        <br />
+        please upload a picture of the problem
+        <input type="file"  size="40" width="500" />
+        <br />
+        <input type="submit" /> <input type="reset" />
+      </form>
+    </center>
+  </body>
+</html>

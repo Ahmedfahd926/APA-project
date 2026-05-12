@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Service Finder</title>
+  </head>
+  <body>
+    <center>
+      <form method="post" action="/signup">
+        <img src="/Signup Image.png" height="50%" width="50%" />
+        <br />
+        name:
+        <input type="text" name="clientName" minlength="3" maxlength="15" placeholder="Enter your name" required />
+        <br />
+        number:
+        <input
+          type="tel"
+          name="clientNumber"
+          minlength="11"
+          maxlength="11"
+          placeholder="Enter your number"
+          required
+        />
+        <br />
+        email:
+        <input
+          type="email"
+          name="clientEmail"
+          maxlength="40"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        username:
+        <input
+          type="text"
+          name="clientUsername"
+          minlength="3"
+          maxlength="20"
+          placeholder="username you want to use"
+          required
+        />
+        <br />
+        password: <input type="password" name="clientPassword" minlength="6" maxlength="15" required />
+        <br />
+        confirm password: <input type="password" required />
+        <br />
+        <input type="submit" value="sign up" /> <input type="reset" />
+      </form>
+    </center>
+  </body>
+</html>

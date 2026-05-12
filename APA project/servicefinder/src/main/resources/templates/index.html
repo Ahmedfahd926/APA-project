@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Service Finder</title>
+    <link rel="stylesheet" href="/signup.css" />
+  </head>
+  <body>
+    <center>
+      <img src="/login image.png" height="50%" width="50%" />
+      <br />
+      <button id="Selected">Client</button>
+      <a href="/worker/login"><button>Worker</button> </a>
+      <form method="post" action="/login">
+        <br />
+        <div th:if="${successMessage}" 
+     style="color: whitesmoke; background-color: green; border: 1px solid #c3e6cb; padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+    <span th:text="${successMessage}"></span>
+      </div>
+      <div th:if="${errorMessage}" 
+     style="color: whitesmoke; background-color: red; border: 1px solid #c3e6cb; padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+    <span th:text="${errorMessage}"></span>
+      </div>
+
+        username:
+        <input class="usernameinput"
+          type="text"
+          name="ClientUsername"
+          size="40"
+          width="500"
+          required
+        />
+        <br />
+        password:
+        <input class="passwordinput"
+          type="password"
+          name="ClientPassword"
+          size="40"
+          width="500"
+          required
+        />
+        
+        <br />
+        <input type="submit" value="login" /> <input type="reset" />
+      </form>
+      <a href="/signup">Dont Have an account?</a>
+    </center>
+  </body>
+</html>

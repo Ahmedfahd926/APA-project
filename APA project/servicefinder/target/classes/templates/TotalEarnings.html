@@ -1,0 +1,28 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Total Earnings</title>
+    <link rel="stylesheet" th:href="@{/WorkerHomePage.css}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><p>Service Finder</p></div>
+            <ul>
+                <li><a th:href="@{/WorkerHome}">Requests</a></li>
+                <li><a th:href="@{/TotalEarnings}">Total Earnings</a></li>
+                <li><a th:href="@{/}">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+                            <center>
+         <div class="job-card" style="display: inline-block; padding: 40px; min-width: 300px;">
+    <h2 style="color: #28a745;" th:text="${total} + ' EGP'">0 EGP</h2>
+    <p>Earnings for <strong th:text="${worker.workerUsername}"></strong></p>
+    <p>Jobs Completed: <span th:text="${count}">0</span></p>
+</div>   
+                                </center>
+        
+    
+</body>
+</html>
